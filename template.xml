@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<HTML data-device-type="dedicated" class="no-js">
+&lt;head&gt;
+<b:skin><![CDATA[
+body {background-color: #fff;background-position: center center;}
+a:link {font-family: 'PT Serif Caption', serif; font-size: 15px; color:#3094db;}
+a:hover {color: #4d4544;}
+a {color: #3094db;}
+.jembut{
+display:none;
+}
+]]></b:skin>
+<link rel='icon' class='js-site-favicon' type='image/svg+xml' href='https://github.githubassets.com/favicons/favicon.svg'>
+&lt;/head&gt;&lt;!--<head/>--&gt;
+<body>
+
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+You don&#39;t have permission to access &quot;https://github.com/&quot; on this server.
+Reference #18.9f137d72.1548351271.4ff8a39e
+</BODY>
+</HTML>
+</b:if>
+
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+ <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+You don&#39;t have permission to access &quot;https://github.com/&quot; on this server.
+Reference #18.9f137d72.1548351271.4ff8a39e
+</BODY>
+</HTML>
+
+</b:if>
+
+<!--REDIRECT-->
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<script>
+ // YOUR LINK HERE
+
+var link = &quot;https://github.com/&quot;; 
+window.location.replace(link);
+  </script>
+</b:if>
+<!--END REDIRECT-->
+
+<b:section class='main jembut' id='main'>
+  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+  </b:widget>
+</b:section>
+&lt;!--</body>--&gt;&lt;/body&gt;
+</HTML>
